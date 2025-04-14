@@ -16,4 +16,6 @@ router.get("/category/:category",getProductsByCategory);
 router.get("/getPendingProducts",getPendingProducts);
 router.post("/approveProduct",auth,isAdmin,approveProduct);
 router.post("/rejectProduct",auth,isAdmin,rejectProduct);
+
+
 export default router;
