@@ -37,6 +37,9 @@ app.use("/api/v1/auth", userRoutes);
 app.use("/api/v1/product", productRoutes);
 
 
+app.get('/', (req, res) => {
+  res.send('API is running...');
+});
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
